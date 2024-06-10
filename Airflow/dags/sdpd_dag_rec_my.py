@@ -17,9 +17,9 @@ import mysql.connector
 from geopy.geocoders import Nominatim
 
 default_args = {
-    'owner': 'Salvador',
+    'owner': 'Kevin',
     'depends_on_past': False,
-    'email': ['salvador@clima2226.com'],
+    'email': ['kwsbaumer@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': True,
     'retries': 3,
@@ -40,14 +40,14 @@ def sdpd_load():
     #from geopy.extra.rate_limiter import RateLimiter
     
     #DB Connect
-    GOOGLE_API_KEY = 'xxxxxx'
-    user_agent_name = 'Sal-App'
+    GOOGLE_API_KEY = 'AIzaSyA3T4JqlZdlnZIqTUkbGulILleHQeRIP6A'
+    user_agent_name = 'kwsbaumer@gmail.com'
     geolocator = Nominatim(user_agent = user_agent_name)
 
-    database = "sdpd"
-    user = 'xxxxx'
-    password = 'xxxxxxx'
-    host = 'sdpd.chck20ykciaw.us-west-2.rds.amazonaws.com'
+    database = "SanDiego_PD_Calls"
+    user = 'root'
+    password = 'WireTent8!'
+    host = '127.0.0.1:3306'
     Days_back = 4
 
 
